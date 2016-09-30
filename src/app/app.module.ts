@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 import { PatientInfoComponent } from './patient-dashboard/patient-info/patient-info.component';
 import { PatientEncountersComponent } from './patient-dashboard/patient-encounters/patient-encounters.component';
@@ -17,13 +17,13 @@ import {
 routing,
 appRoutingProviders
 } from './app.routing';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { MainModule } from './main/main.module';
 import { PatientSearchComponent } from './patient-search/patient-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
+    MainComponent,
     LoginComponent,
     PatientSearchComponent
   ],
@@ -32,7 +32,7 @@ import { PatientSearchComponent } from './patient-search/patient-search.componen
     FormsModule,
     HttpModule,
     RouterModule,
-    DashboardModule,
+    MainModule,
     routing
   ],
   providers: [],

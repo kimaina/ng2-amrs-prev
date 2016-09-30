@@ -1,13 +1,13 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './dashboard.component';
+import { MainComponent } from './main.component';
 import { ClinicDashboardComponent } from '../clinic-dashboard/clinic-dashboard.component';
 import { PatientDashboardComponent } from '../patient-dashboard/patient-dashboard.component';
 import { PatientSearchComponent } from '../patient-search/patient-search.component';
-const dashboardRoutes: Routes = [
+const mainRoutes: Routes = [
   {
     path: '',
-    component: DashboardComponent,
+    component: MainComponent,
     children: [
       { path: 'patient-search', component: PatientSearchComponent },
       {
@@ -24,4 +24,4 @@ const dashboardRoutes: Routes = [
     ]
   }
 ];
-export const dashboardRouting: ModuleWithProviders = RouterModule.forChild(dashboardRoutes);
+export const dashboardRouting: ModuleWithProviders = RouterModule.forChild(mainRoutes);

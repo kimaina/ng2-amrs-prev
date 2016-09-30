@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { DashboardComponent } from './dashboard.component';
+import { MainComponent } from './main.component';
 
 describe('Component: Dashboard', () => {
   it('should create an instance', () => {
-    let component = new DashboardComponent();
+    let component = new MainComponent();
     expect(component).toBeTruthy();
   });
 });

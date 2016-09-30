@@ -1,14 +1,14 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DashboardComponent } from './dashboard/dashboard.component.ts';
+import { MainComponent } from './main/main.component.ts';
 import { LoginComponent } from './login/login.component.ts';
 import { ClinicDashboardComponent } from './clinic-dashboard/clinic-dashboard.component';
 import { PatientDashboardComponent } from './patient-dashboard/patient-dashboard.component';
 const dashboardRoutes: Routes = [
   {
     path: '',
-    component: DashboardComponent,
+    component: MainComponent,
     children: [
       { path: 'patient-search', component: ClinicDashboardComponent }
     ]
