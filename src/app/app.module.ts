@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
+// analytics
+import { Angulartics2Module } from 'angulartics2';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/src/providers/angulartics2-google-analytics';
+
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
@@ -32,10 +36,13 @@ import { PatientSearchComponent } from './patient-search/patient-search.componen
     FormsModule,
     HttpModule,
     RouterModule,
+    Angulartics2Module.forRoot(),
     MainModule,
     routing
   ],
-  providers: [],
+  providers: [
+     Angulartics2GoogleAnalytics
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

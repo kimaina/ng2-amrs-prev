@@ -1,3 +1,10 @@
 <p>
-  patient-search works!
+    patient-search works!
 </p>
+<!-- 
+  sample example of how to do app analytics 
+  this will tell analytics provider thatthe user clicked patient search
+-->
+<button angulartics2On="click" angularticsEvent="PatientSearchClick" angularticsCategory="PatientSearch" [angularticsProperties]="{label: 'user ckickedpatient search'}">
+Search Button
+</button>
